@@ -16,4 +16,4 @@ const os = require("os");
 // console.log(os.totalmem());
 
 // entry point
-console.log(os.homedir());
+// console.log(os.homedir());
