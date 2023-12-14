@@ -31,6 +31,14 @@ const server = http.createServer((req, res) => {
           res.end(conten);
         }
       );
+    } else if (req.url === "/api/admin") {
+      res.writeHead(200, { "Content-Type": "text/json" });
+      const admin = {
+        name: "Abdulloh",
+        surname: "Mirzayev",
+        job: "Front-End developer",
+      };
+      res.end(JSON.stringify(admin));
     }
   } else if (req.method === "POST") {
     const body = [];
